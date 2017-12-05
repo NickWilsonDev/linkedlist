@@ -1,9 +1,11 @@
+package com.nick.linkedlist;
 /**
  * @author Nick Wilson
  * @version 12.5.17
  *
  * Node.java - class models a node that will be used to build a linkedlist
  */
+
 
 public class Node {
 
