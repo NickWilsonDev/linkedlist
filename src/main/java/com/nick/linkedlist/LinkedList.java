@@ -9,20 +9,26 @@ package com.nick.linkedlist;
 
 public class LinkedList {
 
+    /* the start of the list, first node */
     private Node head;
 
+    /* how many nodes are in the list */
     private int size;
 
 
+    /* Constructor for the class, it initializes the classes fields */
     public LinkedList() {
         head = null;
         size = 0;
     }
 
+    /* This method returns an int representing the size of the linkedlist */
     public int getSize() {
         return size;
     }
 
+    /* This method adds a node to the linkedlist.
+     * @param node type Node that will be added to the end of the linkedlist */
     public void addNode(Node node) {
         // two possibilities list is empty or not
         // empty list
@@ -38,6 +44,7 @@ public class LinkedList {
         size++;
     }
 
+    /* Method removes the first node of the linkedlist. */
     public void removeHead() {
         head = head.getNext();
         size--;
@@ -54,10 +61,13 @@ public class LinkedList {
         return str;
     }
 
+    /* Method returns a boolean that is true if the linkedlist is empty and
+     * false if the linkedlist contains at least one node.
+     */
     public boolean isEmpty() {
         return size == 0;
     }
-    
+
     public Node getHead() {
         return head;
     }
